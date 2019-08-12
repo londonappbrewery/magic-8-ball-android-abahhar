@@ -48,7 +48,7 @@ public class AskClickListener implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         int maxIndex = this.getBallArray().length; // Get the number of ball images
-        int randomIndex = randomNumberGenerator.nextInt(maxIndex); // Get random index between (0,max Index]
+        int randomIndex = randomNumberGenerator.nextInt(maxIndex); // Get random index between (0,maxIndex]
 
         // Display the ball image with random index "randomIndex"
         this.getBallDisplay().setImageResource(this.getBallArray()[randomIndex]);
